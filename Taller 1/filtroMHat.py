@@ -55,11 +55,11 @@ def apply_MH_filter(image, kernel):
     return F.conv2d(image, kernel, padding=kernel.size(-1) // 2)
 
 # Parámetros del filtro Gaussiano
-kernel_size = 11  # Tamaño del kernel
-sigma = 2      # Desviación estándar
+kernel_size = 51  # Tamaño del kernel
+sigma = 8     # Desviación estándar
 
 # Cargar imagen
-image_path = 'fig2.jpg'
+image_path = 'fig1.jpg'
 image = load_image(image_path)
 
 # Crear y aplicar el filtro Gaussiano

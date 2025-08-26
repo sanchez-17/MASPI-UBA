@@ -37,11 +37,11 @@ def apply_gaussian_filter(image, kernel):
     return F.conv2d(image, kernel, padding=kernel.size(-1) // 2)
 
 # Parámetros del filtro Gaussiano
-kernel_size = 7  # Tamaño del kernel
-sigma = 1      # Desviación estándar
+kernel_size = 30  # Tamaño del kernel
+sigma = 5      # Desviación estándar
 
 # Cargar imagen
-image_path = 'fig2.jpg'
+image_path = 'fig1.jpg'
 image = load_image(image_path)
 
 # Crear y aplicar el filtro Gaussiano

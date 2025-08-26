@@ -27,7 +27,7 @@ def apply_prewitt_filter(image, kernel):
     return F.conv2d(image, kernel, padding=1)
 
 # Cargar imagen
-image_path = 'fig1.jpg'
+image_path = 'fig4.jpg'
 image = load_image(image_path)
 print(image.shape)
 

@@ -63,10 +63,12 @@ image = load_image(image_path)
 print(image.shape)
 
 # Aplicar filtro
-imgfiltrada = aplicar_filtro(image, ___)
+imgfiltrada = aplicar_filtro(image, k1)
 
 # Encontrar el mejor umbral!
-thr_val = 0.0
+# Para k2 es 4.5
+# para k1 es 0.9
+thr_val = 0.9
 
 # Aplicar umbral
 imgthr = aplicar_umbral(torch.abs(imgfiltrada), thr_val)
